@@ -34,5 +34,5 @@ void draw_board()
 // donne la position d'un charachtère en fonction des coordonés 
 int position_lin(int x, int y)
 {
-  return columns*(x)+y;
+  return columns*(y)+x;
 }
