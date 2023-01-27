@@ -16,11 +16,12 @@ class Couloir : public Objet
     int longueur_couloir_y;
 
 public:
-    Couloir(int abs, int ord, std::vector<int> debut, std::vector<int> fin) : Objet(abs, ord), debut_couloir(debut), fin_couloir(fin), pos_couloir(debut),
+    Couloir(int abs, int ord, std::vector<int> debut, std::vector<int> fin) : Objet(abs, ord), debut_couloir(debut), fin_couloir(fin), 
                                                                               longueur_couloir_x(fin[0] - debut[0]), longueur_couloir_y(fin[1] - debut[1]) {}
 
     void afficher()
     {
+        pos_couloir = debut_couloir;
         int pas_x{1};
         int pas_y{1};
         if (longueur_couloir_x < 0)
