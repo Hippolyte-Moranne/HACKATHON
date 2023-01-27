@@ -1,5 +1,6 @@
 #include "objet.h"
 #include <string>
+#include "playboard.h"
 
 
 class Item : public Objet
@@ -58,5 +59,10 @@ class personnage : public Objet
     void get(Item stuff)
     {
         equipement = stuff;
+    }
+
+    void afficher()
+    {
+        board.at(getPosX() + getPosY()*columns) = 'N';
     }
 };
