@@ -9,9 +9,11 @@ class Piece : public Objet
     int larg;
     int pos_x = Objet::getPosX();
     int pos_y = Objet::getPosY();
+    int porte_x;
+    int porte_y;
 
 public:
-    Piece(int pos_x, int pos_y, int piece_height, int piece_width): pos_x(pos_x), pos_y(pos_y), haut(piece_height), larg(piece_width){}
+    Piece(int pos_x, int pos_y, int piece_height, int piece_width, int porte_x, int porte_y): pos_x(pos_x), pos_y(pos_y), haut(piece_height), larg(piece_width), porte_x(porte_x), porte_y(porte_y){}
 
     void afficher()
     {
@@ -35,5 +37,8 @@ public:
                 board.at((pos_y+j)*columns + pos_x + i) = '.';
             }
         }
+
+        //PORTE 
+        board.at((porte_y*columns + porte_x)) = '+';
     }
 };
