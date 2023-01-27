@@ -8,8 +8,10 @@ class Item : public Objet
     std::string nom;
     
     public:
-    Item(int x,int y, std::string nom) : Objet(x, y), nom(nom){}
-    Item(std::string nom) : nom(nom) {}
+    Item(int x,int y, std::string name) : Objet(x, y), nom(name){}
+    Item(std::string name) : nom(name) {}
+    Item() {}
+
 
 };
 
@@ -20,11 +22,12 @@ class personnage : public Objet
     
     public: 
     personnage(int x, int y, Item equipement) : Objet(x, y), equipement(equipement){}
+    personnage(int x, int y) : Objet(x, y){}
     void deplacement(char key)
     {
-        if key == 'q'
+        if (key == 'q')
         {
-            personnage
+            this->setPosX(this->getPosX() - 1);
         }
     }
 };
