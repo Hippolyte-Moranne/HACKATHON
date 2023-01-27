@@ -1,11 +1,11 @@
 CPP=g++
 RM=rm -f
-CFLAGS=-g
+CFLAGS=-g -std=c++11
 
 SRC =  main.cpp #tous les fichiers cpp doivent être rajouté ici
 OBJ = $(SRC:.cpp=.o)
 
-snake : $(OBJ)
+donjon : $(OBJ)
 	$(CPP) $^ -o $@
 
 # les dépendances
