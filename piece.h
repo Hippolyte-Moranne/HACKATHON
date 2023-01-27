@@ -1,5 +1,7 @@
 #include <iostream>
 #include "playboard.h"
+#include "objet.h"
+
 
 class Piece : public Objet
 {

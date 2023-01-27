@@ -1,6 +1,7 @@
+#pragma once
+
 #include <iostream>
 #include <vector>
-#include "keyboard-event.h"
 
 // nombre de lignes et de colonne du board
 const int rows = 30;
@@ -33,5 +34,5 @@ void draw_board()
 // donne la position d'un charachtère en fonction des coordonés 
 int position_lin(int x, int y)
 {
-  return columns*(x)+y;
+  return columns*(y)+x;
 }

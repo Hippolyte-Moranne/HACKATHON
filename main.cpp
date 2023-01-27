@@ -1,12 +1,16 @@
 #include <iostream>
 #include <vector>
-#include "objet.h"
 #include "playboard.h"
+#include "piece.h"
+#include "keyboard-event.h"
+#include "item.h"
+#include "escalier.h"
+
 
 using namespace std;
 
 int main()
 {
-    cout<<position_lin(6,9);
+    cout<<"hello world";
     return 0;
 };
