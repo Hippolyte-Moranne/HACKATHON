@@ -33,9 +33,6 @@ public:
             while ((pos_couloir[0] != fin_couloir[0]) &&
                    (board.at(pos_couloir[1] + pas_x + columns * pos_couloir[0]) == ' '))
             {
-                std::cout << pos_couloir[0] << endl;
-                cout << pos_couloir[1] << endl;
-
                 pos_couloir[0] += pas_x;
                 board.at(pos_couloir[1] + columns * pos_couloir[0]) = '#';
             }
