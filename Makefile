@@ -2,7 +2,7 @@ CPP=g++
 RM=rm -f
 CFLAGS=-g
 
-SRC = objet.cpp main.cpp #tous les fichiers cpp doivent être rajouté ici
+SRC =  main.cpp #tous les fichiers cpp doivent être rajouté ici
 OBJ = $(SRC:.cpp=.o)
 
 snake : $(OBJ)
@@ -18,6 +18,6 @@ snake : $(OBJ)
 	$(CPP) $(CFLAGS) -o $@ -c $<
 
 clean:
-	$(RM) *.o snake
+	$(RM) *.o donjon
 
 .PHONY: clean
