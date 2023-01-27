@@ -24,5 +24,7 @@ public:
     };
     int getPosX() const { return pos_x; }
     void setPosX(int x) { pos_x = x; }
+    int getPosY() const { return pos_y; }
+    void setPosY(int y) { pos_y = y; }
     virtual void afficher() {};
 };

@@ -27,7 +27,19 @@ class personnage : public Objet
     {
         if (key == 'q')
         {
+            this->setPosY(this->getPosY() - 1);
+        }
+        if (key == 'd')
+        {
+            this->setPosY(this->getPosY() + 1);
+        }
+        if (key == 'z')
+        {
             this->setPosX(this->getPosX() - 1);
+        }
+        if (key == 's')
+        {
+            this->setPosX(this->getPosX() + 1);
         }
     }
 };
