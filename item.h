@@ -19,10 +19,14 @@ class personnage : public Objet
 {
     protected:
     Item equipement;
+    int gold = 0;
     
-    public: 
+    public:
+    personnage(){}; 
     personnage(int x, int y, Item equipement) : Objet(x, y), equipement(equipement){}
     personnage(int x, int y) : Objet(x, y){}
+    personnage(int x, int y, Item equipement, int gold) : Objet(x, y), equipement(equipement), gold(gold){}
+    personnage(int x, int y,int gold) : Objet(x, y), gold(gold){}
     void deplacement(char key)
     {
         if (key == 'q')
@@ -41,5 +45,14 @@ class personnage : public Objet
         {
             this->setPosY(this->getPosY() + 1);
         }
+    }
+    void increase_gold(int k)
+    {
+        gold += k;
+    }
+    void print()
+    {
+        Objet::print();
+        std:cout<<"Gold : "<<gold<<std::endl;
     }
 };

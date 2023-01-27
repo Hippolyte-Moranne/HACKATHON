@@ -19,8 +19,8 @@ public:
     }
     void print()
     {
-        cout << "abscisse" << pos_x << endl;
-        cout << "ordonée" << pos_y << endl;
+        cout << "Abscisse : " << pos_x << endl;
+        cout << "Ordonée : " << pos_y << endl;
     };
     int getPosX() const { return pos_x; }
     void setPosX(int x) { pos_x = x; }
