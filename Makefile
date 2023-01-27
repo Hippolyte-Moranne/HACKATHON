@@ -2,7 +2,7 @@ CPP=g++
 RM=rm -f
 CFLAGS=-g -std=c++11
 
-SRC =  main.cpp #tous les fichiers cpp doivent être rajouté ici
+SRC =  main.cpp keyboard-event.cpp #tous les fichiers cpp doivent être rajouté ici
 OBJ = $(SRC:.cpp=.o)
 
 donjon : $(OBJ)

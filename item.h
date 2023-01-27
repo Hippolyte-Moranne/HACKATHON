@@ -27,6 +27,7 @@ class personnage : public Objet
     personnage(int x, int y) : Objet(x, y){}
     personnage(int x, int y, Item equipement, int gold) : Objet(x, y), equipement(equipement), gold(gold){}
     personnage(int x, int y,int gold) : Objet(x, y), gold(gold){}
+    
     void deplacement(char key)
     {
         if (key == 'q')
