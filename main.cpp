@@ -6,6 +6,5 @@ using namespace std;
 
 int main()
 {
-    Objet objet;
     return 0;
 };
