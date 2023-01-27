@@ -21,16 +21,16 @@ public:
             board.at((pos_y+i)*columns + pos_x) = '%';
             board.at((pos_y+i)*columns + pos_x+larg) = '%';
         }
-        for(int i{1}; i < larg-1; i++)
+        for(int i{1}; i < larg; i++)
         {
-            board.at((pos_y*columns + pos_x + i));
-            board.at((pos_y+haut)*columns + pos_x + i);
+            board.at((pos_y*columns + pos_x + i))='%';
+            board.at((pos_y+haut-1)*columns + pos_x + i)='%';
         }
 
         //INTERIEUR
         for(int i{1}; i < larg - 1; i++)
         {
-            for (int j{1}; j <haut - 1; i++)
+            for (int j{1}; j <haut - 1; j++)
             {
                 board.at((pos_y+j)*columns + pos_x + i) = '.';
             }
