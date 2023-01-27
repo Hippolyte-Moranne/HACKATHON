@@ -18,6 +18,6 @@ snake : $(OBJ)
 	$(CPP) $(CFLAGS) -o $@ -c $<
 
 clean:
-	$(RM) *.o snake
+	$(RM) *.o donjon
 
 .PHONY: clean
