@@ -29,3 +29,9 @@ void draw_board()
     std::cout << std::endl;
   }
 }
+
+// donne la position d'un charachtère en fonction des coordonés 
+int position_lin(int x, int y)
+{
+  return columns*(x)+y;
+}
