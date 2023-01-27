@@ -1,6 +1,7 @@
+#pragma once
+
 #include <iostream>
 #include <vector>
-#include "keyboard-event.h"
 
 // nombre de lignes et de colonne du board
 const int rows = 30;
