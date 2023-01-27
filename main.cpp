@@ -7,5 +7,6 @@ using namespace std;
 
 int main()
 {
+    cout<<position_lin(6,9);
     return 0;
 };
