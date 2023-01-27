@@ -55,4 +55,8 @@ class personnage : public Objet
         Objet::print();
         std:cout<<"Gold : "<<gold<<std::endl;
     }
+    void get(Item stuff)
+    {
+        equipement = stuff;
+    }
 };
